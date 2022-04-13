@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>taller3</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>taller4</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14579,7 +14579,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<center><h1>Taller 3 - Solución</h1></center>
+<center><h1>Taller 4</h1></center>
 </div>
 </div>
 </div>
@@ -14592,6 +14592,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 </pre></div>
 
@@ -14607,8 +14608,72 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>1.Considere le siguiente distribución de frecuencias:</p>
-<p>a)  Completar la tabla.</p>
+<ol>
+<li>Determinar y justificar si las siguientes afirmaciones son Falsas o Verdaderas.</li>
+</ol>
+<ul>
+<li>La mitad de las observaciones de una muestra es menor o igual que la media.</li>
+<li>La media de un conjunto de datos es el valor que ocurre con más frecuencia.</li>
+<li>La media de una muestra es igual a una de las observaciones de la muestra.</li>
+<li>Es preferible utilizar un instrumento de medición que genere observaciones con una desviación estándar grande.</li>
+<li>Por lo general, la media y la mediana de un conjunto de datos son valores muy similares.</li>
+</ul>
+<p>Rta:</p>
+<ul>
+<li>Falso, el valor que está en la mitad de las observaciones es la mediana.</li>
+<li>Falso, debido a que el valor que ocurre con más frecuencia es la moda.</li>
+<li>Falso, no en todos lo casos hay alguna observación igual a la media.</li>
+<li>Falso, Si un intrumento da una dispersión muy grande, quiere decir que está descalibrado y no es factible.</li>
+<li>Falso, pues unicamente dan los mismos valores cuando la muestra es simetrica, de resto la mediana es mayor o menor.</li>
+</ul>
+<ol>
+<li>Yanowitz, en In-use Emissions From Heavy-Duty Diesel Vehicles, investigó los factores que afectan las emisiones de un vehículo diesel, y obtuvo datos acerca de la emisión de partículas para una muestra de 138 vehículos conducidos en bajas altitudes (cerca del nivel del mar) y para una muestra de 62 vehículos conducidos a grandes altitudes (aproximadamente a una milla del nivel del mar). Todos los vehículos se fabricaron entre 1991 y 1996. Las muestras contenían proporciones parecidas de vehículos de bajo y alto kilometraje. Los datos, en unidades de gramos de partículas por galón de combustible consumido, se presentan en el archivo EP.txt. En esta base de datos, “emision” es la variable emisión de partículas (en unidades de gr/gal) y “altitud” es la varaible altitud a la que se conduce el vehículo (0 = baja; 1 = alta). A grandes altitudes, la presión barométrica es más baja, así la razón de eficiencia aire/combustible también es más baja. Por esta razón se pensó que la emisión de partículas podría ser mayor a grandes a altitudes.</li>
+</ol>
+<p>Completar la siguiente tabla:</p>
+<table>
+<thead><tr>
+<th style="text-align:center"><strong>Altitud</strong></th>
+<th style="text-align:center"><strong>n</strong></th>
+<th style="text-align:center"><strong>Mín.</strong></th>
+<th style="text-align:center"><strong>Cuar.1</strong></th>
+<th style="text-align:center"><strong>Cuar.2</strong></th>
+<th style="text-align:center"><strong>Cuar.3</strong></th>
+<th style="text-align:center"><strong>Max</strong></th>
+<th><strong>Media</strong></th>
+<th><strong>DE</strong></th>
+<th><strong>CV</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Baja</td>
+<td style="text-align:center">138</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align:center">Alta</td>
+<td style="text-align:center">62</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>DE: Desviación Estándar. CV: Coeficiente de Variación.</p>
+<ul>
+<li>Comparar los resultados para determinar si los datos apoyan el supuesto de que la emisión de partículas podría ser mayor a grandes a altitudes.</li>
+</ul>
 
 </div>
 </div>
@@ -14621,29 +14686,29 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">li</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">100</span><span class="p">])</span>
-<span class="n">ls</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">RTA:</span>
+<span class="sd">&quot;&quot;&quot;</span>
 
-<span class="n">yj</span> <span class="o">=</span> <span class="p">(</span><span class="n">li</span><span class="o">+</span><span class="n">ls</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
-<span class="n">n</span> <span class="o">=</span> <span class="mi">200</span>
-<span class="n">nj</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">yj</span><span class="p">))</span>
-<span class="n">nj</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">60</span>
-<span class="n">nj</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">n</span><span class="o">*</span><span class="mf">0.4</span>
-<span class="n">nj</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">30</span>
-<span class="n">nj</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">n</span><span class="o">*</span><span class="mf">0.1</span>
-<span class="n">nj</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="n">n</span><span class="o">-</span><span class="nb">sum</span><span class="p">(</span><span class="n">nj</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="n">nj</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-<span class="n">hj</span> <span class="o">=</span> <span class="n">nj</span><span class="o">/</span><span class="n">n</span>
-<span class="n">Nj</span> <span class="o">=</span> <span class="n">nj</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
-<span class="n">Hj</span> <span class="o">=</span> <span class="n">hj</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
+<span class="c1"># Importar el dataset</span>
+<span class="n">EP</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;EP.txt&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="c1"># Tomar los valores con altitud baja</span>
+<span class="n">baja</span> <span class="o">=</span> <span class="n">EP</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">EP</span><span class="p">[</span><span class="s1">&#39;altitud&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+<span class="c1"># Tomar los valores con altitud alta</span>
+<span class="n">alta</span> <span class="o">=</span> <span class="n">EP</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">EP</span><span class="p">[</span><span class="s1">&#39;altitud&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
+<span class="c1"># Calcular los tamaños de los grupos</span>
+<span class="n">n_baja</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">baja</span><span class="p">)</span>
+<span class="n">n_alta</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">alta</span><span class="p">)</span>
 
-<span class="n">nj</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">nj</span><span class="p">,</span> <span class="p">[</span><span class="nb">sum</span><span class="p">(</span><span class="n">nj</span><span class="p">)])</span>
-<span class="n">hj</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">hj</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-<span class="n">yj</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">yj</span><span class="p">,</span> <span class="p">[</span><span class="nb">sum</span><span class="p">(</span><span class="n">yj</span><span class="p">)])</span>
-
-<span class="n">table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="n">yj</span><span class="p">,</span> <span class="n">nj</span><span class="p">,</span> <span class="n">hj</span><span class="p">,</span> <span class="n">Nj</span><span class="p">,</span> <span class="n">Hj</span><span class="p">])</span><span class="o">.</span><span class="n">T</span>
-<span class="n">table</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Marca de clase&#39;</span><span class="p">,</span> <span class="s1">&#39;F. Absoluta&#39;</span><span class="p">,</span> <span class="s1">&#39;F. Relativa&#39;</span><span class="p">,</span> <span class="s1">&#39;F. Absoluta Acum&#39;</span><span class="p">,</span> <span class="s1">&#39;F. Relativa Acum&#39;</span><span class="p">]</span>
-<span class="n">table</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;[0;10]&quot;</span><span class="p">,</span> <span class="s2">&quot;(10;20]&quot;</span><span class="p">,</span> <span class="s2">&quot;(20;30]&quot;</span><span class="p">,</span> <span class="s2">&quot;(30;100]&quot;</span><span class="p">,</span> <span class="s2">&quot;(100;200]&quot;</span><span class="p">,</span> <span class="s2">&quot;Total&quot;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">table</span><span class="o">.</span><span class="n">to_string</span><span class="p">())</span>
+<span class="n">summ_baja</span> <span class="o">=</span> <span class="n">baja</span><span class="o">.</span><span class="n">emision</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+<span class="n">cv_1</span> <span class="o">=</span> <span class="n">summ_baja</span><span class="p">[</span><span class="s1">&#39;std&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">summ_baja</span><span class="p">[</span><span class="s1">&#39;mean&#39;</span><span class="p">]</span>
+<span class="n">summ_baja</span><span class="p">[</span><span class="s1">&#39;CV&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cv_1</span>
+<span class="n">summ_alta</span> <span class="o">=</span> <span class="n">alta</span><span class="o">.</span><span class="n">emision</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+<span class="n">cv_2</span> <span class="o">=</span> <span class="n">summ_alta</span><span class="p">[</span><span class="s1">&#39;std&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">summ_alta</span><span class="p">[</span><span class="s1">&#39;mean&#39;</span><span class="p">]</span>
+<span class="n">summ_alta</span><span class="p">[</span><span class="s1">&#39;CV&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cv_2</span>
+<span class="n">table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">summ_baja</span><span class="p">,</span> <span class="n">summ_alta</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">table</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Baja&#39;</span><span class="p">,</span> <span class="s1">&#39;Alta&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">table</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -14665,13 +14730,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>           Marca de clase  F. Absoluta  F. Relativa  F. Absoluta Acum  F. Relativa Acum
-[0;10]                5.0         60.0         0.30              60.0              0.30
-(10;20]              15.0         80.0         0.40             140.0              0.70
-(20;30]              25.0         30.0         0.15             170.0              0.85
-(30;100]             65.0         20.0         0.10             190.0              0.95
-(100;200]           150.0         10.0         0.05             200.0              1.00
-Total               260.0        200.0         1.00               NaN               NaN
+<pre>      count   mean    std   min    25%   50%    75%    max     CV
+Baja  138.0  3.715  2.558  0.25  1.472  3.18  5.265  11.23  0.689
+Alta   62.0  6.596  4.519  1.11  3.488  5.75  7.755  23.38  0.685
 </pre>
 </div>
 </div>
@@ -14687,99 +14748,68 @@ Total               260.0        200.0         1.00               NaN           
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>b) ¿Cuántos individuos asumen un valor de la variable de hasta 100? $\\$</p>
-
-<pre><code>- 190 Estudiantes asumen un valor de la variable de hasta 100. $\\$
-</code></pre>
-<p>c) ¿Qué porcentaje de individuos asumen un valor de la variable de entre 10 y 100? $\\$</p>
-
-<pre><code>- 65% de los individuos asumen un valor de la variable de entre 10 y 100. $\\$
-</code></pre>
-<p>e) Calcular el promedio de la variable. $\\$</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mean</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">hj</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="n">hj</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">yj</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="n">hj</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-<span class="n">mean</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>25.25</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>2.Considere el conjunto de datos dados en el archivo de texto taller_03_datos.txt. Este archivo contiene las calificaciones promedio de una muestra aleatoria de estudiantes de una Universidad en el primer semestre de este año. A continuación se presenta el procedimiento importar este conjunto de datos en R.</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Importar base de datos</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;taller_03_datos.txt&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
-<span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>a) Calcular el máximo, el mínimo, el rango, y el promedio de las calificaciones.</p>
+<ul>
+<li>A altitudes más grandes la emisión de partículas es mayor en promedio, aunque en ambas muestras se tiene una variacion alta de 68%, por lo que se recomienda un análisis más profundo.</li>
+</ul>
+<ol>
+<li>El artículo Computing and Using Rural versus Urban Measures in Statistical Applications (C. Goodall, K. Kafadar y J. Tukey, The American Statistician, 1998:101-111) analiza los métodos para medir el grado a los cuales los condados de los Estados Unidos son urbanos más que rurales. La siguiente tabla de frecuencias presenta las frecuencias de población de los condados de los Estados Unidos.</li>
+</ol>
+<center>
+    <table class="table table-condensed">
+        <thead>
+            <tr class="header">
+                <th align="center">Población (en miles)</th>
+                <th align="center">No.&nbsp;de condados</th>
+            </tr>
+        </thead>
+    <tbody>
+    <tr class="odd">
+    <td align="center">0.064 – 5.405</td>
+    <td align="center">305</td>
+    </tr>
+    <tr class="even">
+    <td align="center">5.405 – 8.780</td>
+    <td align="center">294</td>
+    </tr>
+    <tr class="odd">
+    <td align="center">8.780 – 12.417</td>
+    <td align="center">331</td>
+    </tr>
+    <tr class="even">
+    <td align="center">12.417 – 16.384</td>
+    <td align="center">286</td>
+    </tr>
+    <tr class="odd">
+    <td align="center">16.384 – 21.619</td>
+    <td align="center">306</td>
+    </tr>
+    <tr class="even">
+    <td align="center">21.619 – 28.526</td>
+    <td align="center">273</td>
+    </tr>
+    <tr class="odd">
+    <td align="center">28.526 – 40.342</td>
+    <td align="center">334</td>
+    </tr>
+    <tr class="even">
+    <td align="center">40.342 – 65.536</td>
+    <td align="center">326</td>
+    </tr>
+    <tr class="odd">
+    <td align="center">65.536 – 131.072</td>
+    <td align="center">290</td>
+    </tr>
+    <tr class="even">
+    <td align="center">131.072 – 8388.608</td>
+    <td align="center">323</td>
+    </tr>
+    </tbody>
+    </table>
+</center><ul>
+<li>Completar la distribución de frecuencias (frecuencia relativa y frecuencias acumuladas).</li>
+<li>Calcular la media, la mediana, la moda, y el coeficiente de variación.</li>
+<li>Comentar los resultados del numeral anterior.</li>
+</ul>
 
 </div>
 </div>
@@ -14792,79 +14822,50 @@ Total               260.0        200.0         1.00               NaN           
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Maximo</span>
-<span class="n">maximo</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
-<span class="n">minimo</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
-<span class="n">R</span> <span class="o">=</span> <span class="n">maximo</span> <span class="o">-</span> <span class="n">minimo</span>
-<span class="n">promedio</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Maximo: </span><span class="si">{</span><span class="n">maximo</span><span class="si">}</span><span class="se">\n</span><span class="s1">Minimo: </span><span class="si">{</span><span class="n">minimo</span><span class="si">}</span><span class="se">\n</span><span class="s1">Rango: </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">R</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="si">}</span><span class="se">\n</span><span class="s1">Promedio: </span><span class="si">{</span><span class="n">promedio</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-</pre></div>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">RTA:</span>
+<span class="sd">&quot;&quot;&quot;</span>
 
-     </div>
-</div>
-</div>
-</div>
+<span class="c1"># Get indexes</span>
+<span class="n">names</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="s1">&#39;0.064 – 5.405&#39;</span><span class="p">,</span> <span class="s1">&#39;5.405 – 8.780&#39;</span><span class="p">,</span> <span class="s1">&#39;8.780 – 12.417&#39;</span><span class="p">,</span> <span class="s1">&#39;12.417 – 16.384&#39;</span><span class="p">,</span>
+	 <span class="s1">&#39;16.384 – 21.619&#39;</span><span class="p">,</span> <span class="s1">&#39;21.619 – 28.526&#39;</span><span class="p">,</span> <span class="s1">&#39;28.526 – 40.342&#39;</span><span class="p">,</span> <span class="s1">&#39;40.342 – 65.536&#39;</span><span class="p">,</span> <span class="s1">&#39;65.536 – 131.072&#39;</span><span class="p">,</span>
+	  <span class="s1">&#39;131.072 – 8388.608&#39;</span><span class="p">])</span>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
+<span class="c1"># Calculate frequencies distribution</span>
+<span class="n">ni</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">305</span><span class="p">,</span> <span class="mi">294</span><span class="p">,</span> <span class="mi">331</span><span class="p">,</span> <span class="mi">286</span><span class="p">,</span> <span class="mi">306</span><span class="p">,</span> <span class="mi">273</span><span class="p">,</span> <span class="mi">334</span><span class="p">,</span> <span class="mi">326</span><span class="p">,</span> <span class="mi">290</span><span class="p">,</span> <span class="mi">323</span><span class="p">])</span> <span class="c1"># absolute frequencies</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">ni</span><span class="p">)</span> <span class="c1"># total number of events</span>
+<span class="n">hi</span> <span class="o">=</span> <span class="n">ni</span><span class="o">/</span><span class="n">n</span> <span class="c1"># relative frequencies</span>
+<span class="n">Ni</span> <span class="o">=</span> <span class="n">ni</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span> <span class="c1"># cumulative absolute frequencies</span>
+<span class="n">Hi</span> <span class="o">=</span> <span class="n">hi</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span> <span class="c1"># cumulative relative frequencies</span>
+<span class="n">li</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.064</span><span class="p">,</span> <span class="mf">5.405</span><span class="p">,</span> <span class="mf">8.780</span><span class="p">,</span> <span class="mf">12.417</span><span class="p">,</span> <span class="mf">16.384</span><span class="p">,</span> <span class="mf">21.619</span><span class="p">,</span> <span class="mf">28.526</span><span class="p">,</span> <span class="mf">40.342</span><span class="p">,</span> <span class="mf">65.536</span><span class="p">,</span> <span class="mf">131.072</span><span class="p">])</span>
+<span class="n">ls</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">5.405</span><span class="p">,</span> <span class="mf">8.780</span><span class="p">,</span> <span class="mf">12.417</span><span class="p">,</span> <span class="mf">16.384</span><span class="p">,</span> <span class="mf">21.619</span><span class="p">,</span> <span class="mf">28.526</span><span class="p">,</span> <span class="mf">40.342</span><span class="p">,</span> <span class="mf">65.536</span><span class="p">,</span> <span class="mf">131.072</span><span class="p">,</span> <span class="mf">8388.608</span><span class="p">])</span>
+<span class="n">yi</span> <span class="o">=</span> <span class="p">(</span><span class="n">li</span><span class="o">+</span><span class="n">ls</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">distribution</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Marcas de clase&#39;</span><span class="p">:</span><span class="n">yi</span> <span class="p">,</span> <span class="s1">&#39;No. de condados&#39;</span><span class="p">:</span> <span class="n">ni</span><span class="p">,</span> <span class="s1">&#39;Proporción (%)&#39;</span><span class="p">:</span> <span class="n">hi</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="s1">&#39;F. Abs. Acum&#39;</span><span class="p">:</span> <span class="n">Ni</span><span class="p">,</span> <span class="s1">&#39;F. Rel. Acum (%)&#39;</span><span class="p">:</span> <span class="n">Hi</span><span class="o">*</span><span class="mi">100</span><span class="p">})</span>
+<span class="n">distribution</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">names</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Distribution of frequences:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">distribution</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">to_string</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">()</span>
 
+<span class="c1"># Calculate the mean</span>
+<span class="n">mean</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">hi</span><span class="o">*</span><span class="n">yi</span><span class="p">)</span>
 
-<div class="jp-OutputArea jp-Cell-outputArea">
+<span class="c1"># Calculate the median</span>
+<span class="n">k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">Hi</span><span class="o">-</span><span class="mf">0.5</span><span class="p">))</span>
+<span class="n">median</span> <span class="o">=</span> <span class="n">li</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">+</span><span class="p">(</span><span class="n">ls</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">-</span><span class="n">li</span><span class="p">[</span><span class="n">k</span><span class="p">])</span><span class="o">*</span><span class="p">((</span><span class="mf">.5</span><span class="o">*</span><span class="n">n</span> <span class="o">-</span> <span class="n">Ni</span><span class="p">[</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">/</span><span class="n">ni</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
 
-<div class="jp-OutputArea-child">
+<span class="c1"># Calculate the mode</span>
+<span class="n">k_1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">hi</span><span class="p">)</span>
+<span class="n">mode</span> <span class="o">=</span> <span class="n">li</span><span class="p">[</span><span class="n">k_1</span><span class="p">]</span><span class="o">+</span><span class="p">(</span><span class="n">ls</span><span class="p">[</span><span class="n">k_1</span><span class="p">]</span><span class="o">-</span><span class="n">li</span><span class="p">[</span><span class="n">k_1</span><span class="p">])</span><span class="o">*</span><span class="p">((</span><span class="n">ni</span><span class="p">[</span><span class="n">k_1</span><span class="p">]</span> <span class="o">-</span> <span class="n">ni</span><span class="p">[</span><span class="n">k_1</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">ni</span><span class="p">[</span><span class="n">k_1</span><span class="p">]</span> <span class="o">-</span> <span class="n">ni</span><span class="p">[</span><span class="n">k_1</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">ni</span><span class="p">[</span><span class="n">k_1</span><span class="o">+</span><span class="mi">1</span><span class="p">]))</span>
 
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<span class="c1"># Calculate the standard deviation</span>
+<span class="n">std</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">ni</span><span class="o">*</span><span class="p">(</span><span class="n">yi</span><span class="o">-</span><span class="n">mean</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
 
+<span class="c1"># Calculate the coefficient of variation</span>
+<span class="n">cv</span> <span class="o">=</span> <span class="p">(</span><span class="n">std</span><span class="o">/</span><span class="n">mean</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span>
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Maximo: 4.08
-Minimo: 3.4
-Rango: 0.68
-Promedio: 3.69899
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>b) Hacer la distribución de frecuencias de las calificaciones con m=10 intervalos.</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Intervalos</span>
-<span class="n">m</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="c1"># Amplitud</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">R</span><span class="o">/</span><span class="n">m</span>
-<span class="c1"># Limites</span>
-<span class="n">lim</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">a</span><span class="p">)</span><span class="o">+</span><span class="nb">min</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">m</span><span class="o">+</span><span class="mi">1</span><span class="p">))))</span>
-<span class="n">nj</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">data</span><span class="p">),</span> <span class="n">lim</span><span class="p">,</span> <span class="n">include_lowest</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-<span class="n">hj</span> <span class="o">=</span> <span class="n">nj</span><span class="o">/</span><span class="n">n</span>
-<span class="n">Nj</span> <span class="o">=</span> <span class="n">nj</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
-<span class="n">Hj</span> <span class="o">=</span> <span class="n">hj</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
-
-<span class="n">table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span><span class="n">nj</span><span class="p">,</span> <span class="n">hj</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="n">Nj</span><span class="p">,</span> <span class="n">Hj</span><span class="o">*</span><span class="mi">100</span><span class="p">])</span><span class="o">.</span><span class="n">T</span>
-<span class="n">table</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;F. Absoluta&#39;</span><span class="p">,</span> <span class="s1">&#39;F. Relativa (%)&#39;</span><span class="p">,</span> <span class="s1">&#39;F. Absoluta Acum&#39;</span><span class="p">,</span> <span class="s1">&#39;F. Relativa Acum (%)&#39;</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">table</span><span class="p">)</span>
+<span class="n">variables</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;mean&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">mean</span><span class="p">],</span> <span class="s1">&#39;median&#39;</span><span class="p">:[</span> <span class="n">median</span><span class="p">],</span> <span class="s1">&#39;mode&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">mode</span><span class="p">],</span> <span class="s1">&#39;CV (%)&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">cv</span><span class="p">]})</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Variablility measures:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">variables</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -14886,29 +14887,22 @@ Promedio: 3.69899
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>                F. Absoluta  F. Relativa (%)  F. Absoluta Acum  \
-(3.399, 3.468]         15.0              1.5              15.0   
-(3.468, 3.536]         42.0              4.2              57.0   
-(3.536, 3.604]        126.0             12.6             183.0   
-(3.604, 3.672]        231.0             23.1             414.0   
-(3.672, 3.74]         250.0             25.0             664.0   
-(3.74, 3.808]         189.0             18.9             853.0   
-(3.808, 3.876]         97.0              9.7             950.0   
-(3.876, 3.944]         45.0              4.5             995.0   
-(3.944, 4.012]          4.0              0.4             999.0   
-(4.012, 4.08]           1.0              0.1            1000.0   
+<pre>Distribution of frequences:
+                    Marcas de clase  No. de condados  Proporción (%)  F. Abs. Acum  F. Rel. Acum (%)
+0.064 – 5.405                 2.734              305           9.941           305             9.941
+5.405 – 8.780                 7.092              294           9.583           599            19.524
+8.780 – 12.417               10.598              331          10.789           930            30.313
+12.417 – 16.384              14.401              286           9.322          1216            39.635
+16.384 – 21.619              19.002              306           9.974          1522            49.609
+21.619 – 28.526              25.072              273           8.898          1795            58.507
+28.526 – 40.342              34.434              334          10.887          2129            69.394
+40.342 – 65.536              52.939              326          10.626          2455            80.020
+65.536 – 131.072             98.304              290           9.452          2745            89.472
+131.072 – 8388.608         4259.840              323          10.528          3068           100.000
 
-                F. Relativa Acum (%)  
-(3.399, 3.468]                   1.5  
-(3.468, 3.536]                   5.7  
-(3.536, 3.604]                  18.3  
-(3.604, 3.672]                  41.4  
-(3.672, 3.74]                   66.4  
-(3.74, 3.808]                   85.3  
-(3.808, 3.876]                  95.0  
-(3.876, 3.944]                  99.5  
-(3.944, 4.012]                  99.9  
-(4.012, 4.08]                  100.0  
+Variablility measures:
+      mean  median    mode   CV (%)
+0  474.707  21.824  38.972  273.619
 </pre>
 </div>
 </div>
@@ -14924,7 +14918,21 @@ Promedio: 3.69899
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>3.Se estudiaron dos métodos de recuperación de proteínas. Se hicieron trece corridas usando cada método y se registró la parte de la proteína recuperada para cada corrida. Los resultados son los siguientes: Método 1: $0.32, 0.35, 0.37, 0.39, 0.42, 0.47, 0.51, 0.58, 0.60, 0.62, 0.65, 0.68, 0.75. Método 2: 0.25, 0.40, 0.48, 0.55, 0.56, 0.58, 0.60, 0.65, 0.70, 0.76, 0.80, 0.91, 0.99$. Calcular el mínimo, el máximo, el rango, y el promedio de cada método. ¿Qué diferencias se observan entre los resultados de los dos métodos?</p>
+<p>Podemos ver que en se tiene un alto sesgo en los datos, pues el coeficiente de variación es muy alto, es decir CV&gt;&gt;15%.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ol>
+<li>Una muestra de temperaturas para iniciar una cierta reacción química dio un promedio muestral de (C) 87.3 y una desviación estándar muestral de (C) 1.04. ¿Cuáles son el promedio muestral y la desviación estándar en grados Fahrenheit?</li>
+</ol>
 
 </div>
 </div>
@@ -14937,22 +14945,16 @@ Promedio: 3.69899
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x_1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.32</span><span class="p">,</span> <span class="mf">0.35</span><span class="p">,</span> <span class="mf">0.37</span><span class="p">,</span> <span class="mf">0.39</span><span class="p">,</span> <span class="mf">0.42</span><span class="p">,</span> <span class="mf">0.47</span><span class="p">,</span> <span class="mf">0.51</span><span class="p">,</span> <span class="mf">0.58</span><span class="p">,</span> <span class="mf">0.60</span><span class="p">,</span> <span class="mf">0.62</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">,</span> <span class="mf">0.68</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">])</span>
-<span class="n">x_2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.40</span><span class="p">,</span> <span class="mf">0.48</span><span class="p">,</span> <span class="mf">0.55</span><span class="p">,</span> <span class="mf">0.56</span><span class="p">,</span> <span class="mf">0.58</span><span class="p">,</span> <span class="mf">0.60</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">,</span> <span class="mf">0.70</span><span class="p">,</span> <span class="mf">0.76</span><span class="p">,</span> <span class="mf">0.80</span><span class="p">,</span> <span class="mf">0.91</span><span class="p">,</span> <span class="mf">0.99</span><span class="p">])</span>
-<span class="c1"># Cálculos del primer método</span>
-<span class="n">min_1</span> <span class="o">=</span> <span class="n">x_1</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
-<span class="n">max_1</span> <span class="o">=</span> <span class="n">x_1</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
-<span class="n">R_1</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">max_1</span> <span class="o">-</span> <span class="n">min_1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<span class="n">promedio_1</span> <span class="o">=</span> <span class="n">x_1</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-<span class="c1"># Cálculos del segundo método</span>
-<span class="n">min_2</span> <span class="o">=</span> <span class="n">x_2</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
-<span class="n">max_2</span> <span class="o">=</span> <span class="n">x_2</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
-<span class="n">R_2</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">max_2</span> <span class="o">-</span> <span class="n">min_2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<span class="n">promedio_2</span> <span class="o">=</span> <span class="n">x_2</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-<span class="c1"># Mostrar los resultados</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Maximo: </span><span class="si">{</span><span class="n">max_1</span><span class="si">}</span><span class="se">\n</span><span class="s1">Minimo: </span><span class="si">{</span><span class="n">min_1</span><span class="si">}</span><span class="se">\n</span><span class="s1">Rango: </span><span class="si">{</span><span class="n">R_1</span><span class="si">}</span><span class="se">\n</span><span class="s1">Promedio: </span><span class="si">{</span><span class="n">promedio_1</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="o">*</span><span class="mi">50</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Maximo: </span><span class="si">{</span><span class="n">max_2</span><span class="si">}</span><span class="se">\n</span><span class="s1">Minimo: </span><span class="si">{</span><span class="n">min_2</span><span class="si">}</span><span class="se">\n</span><span class="s1">Rango: </span><span class="si">{</span><span class="n">R_2</span><span class="si">}</span><span class="se">\n</span><span class="s1">Promedio: </span><span class="si">{</span><span class="n">promedio_2</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">RTA:</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="n">x_c</span> <span class="o">=</span> <span class="mf">87.3</span>
+<span class="n">s_c</span> <span class="o">=</span> <span class="mf">1.04</span>
+<span class="n">x_f</span> <span class="o">=</span> <span class="mi">32</span> <span class="o">+</span> <span class="p">(</span><span class="n">x_c</span><span class="o">*</span><span class="p">(</span><span class="mi">9</span><span class="o">/</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">s_f</span> <span class="o">=</span> <span class="n">s_c</span><span class="o">*</span><span class="p">(</span><span class="mi">9</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Promedio Fahrenheit:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x_f</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s_f</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14974,15 +14976,9 @@ Promedio: 3.69899
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Maximo: 0.75
-Minimo: 0.32
-Rango: 0.43
-Promedio: 0.5161538461538462
---------------------------------------------------
-Maximo: 0.99
-Minimo: 0.25
-Rango: 0.74
-Promedio: 0.6330769230769231
+<pre>Promedio Fahrenheit:
+189.14
+1.872
 </pre>
 </div>
 </div>
@@ -14998,178 +14994,13 @@ Promedio: 0.6330769230769231
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>4.Una muestra de temperaturas para iniciar una cierta reacción química dio un promedio muestral de 87.3 grados centígrados. ¿Cuál es el promedio muestral en grados Fahrenheit?</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">celsius</span> <span class="o">=</span> <span class="mf">87.3</span>
-<span class="n">farenheit</span> <span class="o">=</span> <span class="p">(</span><span class="n">celsius</span><span class="o">*</span><span class="p">(</span><span class="mi">9</span><span class="o">/</span><span class="mi">5</span><span class="p">))</span> <span class="o">+</span> <span class="mi">32</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">farenheit</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s1">°C&#39;</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>189.14°C
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>5.Veintiuna personas tienen una estatura promedio de 168 centímetros. Si se considera la información de una persona adicional, ¿cuál es la estatura que debe tener esta persona para que la estatura promedio se incremente dos centímetros?</p>
-<p><em>n_personas $(n)$ = $21$</em> $\\$
-<em>promedio $(\bar{x})$ = $168$</em> $\\$
-<em>estatura_adicional = $h$</em> $\\$
-<em>promedio_nuevo $(\bar{x}_f)$ = $\bar{x} + 2$</em> $\\$</p>
+<ol>
+<li>Sean $X$ y $Y$ dos variables tales que:
 $$
-\begin{align*}
-&amp;\bar{x}_f = \frac{1}{n+1} * ((n * \bar{x})+h) \\
-&amp;h = \left(\bar{x}_f * \left(n+1\right) \right) - \left(n * \bar{x}\right) \\
-&amp;= \left(\left(168+2\right) * \left(21+1\right) \right) - \left(21 * 168\right) \\
-&amp;= \left(170 * 22 \right) - 3.528 \\
-&amp;= 3.740 - 3.528 \\
-&amp;= 212_{cm} \\
-&amp;\text{In code would look like:} \\ \\
-&amp;h= \left(\bar{x}_f * \left(n+1\right) \right) - \left(n * \bar{x}\right) \\
-\end{align*}
-$$<p>Se halló la diferencia de las sumas de los dos promedios (muestra de $21$ personas y muestra de $22$ personas) dándonos como resultado $212_{cm}$.</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">21</span>
-<span class="n">mean</span> <span class="o">=</span> <span class="mi">168</span>
-<span class="n">mean_f</span> <span class="o">=</span> <span class="mi">168</span><span class="o">+</span><span class="mi">2</span>
-<span class="n">h</span> <span class="o">=</span> <span class="p">(</span><span class="n">mean_f</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span><span class="o">-</span><span class="p">(</span><span class="n">n</span><span class="o">*</span><span class="n">mean</span><span class="p">)</span>
-<span class="n">h</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>212</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>6.Con la información dada en la siguiente tabla, calcular la calificación de un estudiante en la última unidad de la asignatura considerando que quiere aprobar la materia con 3.2.</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Percentiles</span>
-<span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.15</span><span class="p">])</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">3.7</span><span class="p">,</span> <span class="mf">2.4</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span> <span class="mf">3.2</span><span class="p">])</span>
-<span class="n">mean</span> <span class="o">=</span> <span class="mf">3.2</span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>El valor de la calificación de la última unidad es:
+\sum_{i=1}^{10}x_i=110,\sum_{i=1}^{10}y_i=60,\sum_{i=1}^{10}x^2_i=3156 \ y \ \sum_{i=1}^{10}y^2_i=1138.
 $$
-\begin{align*}
-&amp;\bar{x} = \frac{\sum_{i=1}^{n} x_iv_i}{\sum_{i=1}^{n} v_i} \Rightarrow
-\bar{x} = \frac{3.7 * 0.2 + 2.4 * 0.25 + 3.0 * 0.2 + 3.2 * 0.15 + x_n * 0.2}{0.2 + 0.25 + 0.2 + 0.15 + 0.2} \\
-&amp;x_n = \frac{\left(\bar{x} * \left(0.2 + 0.25 + 0.2 + 0.15 + 0.2\right) \right) - \left(3.7 * 0.2 + 2.4 * 0.25 + 3.0 * 0.2 + 3.2 * 0.15\right)}{0.2} \\
-&amp;= \frac{\left(\bar{x} * 1 \right) - \left(0.74 + 0.6 + 0.6 + 0.48\right)}{0.2} \\
-&amp;= \frac{\bar{x} - 2.42}{0.2} \\
-&amp;= \frac{3.2 - 2.42}{0.2} \\
-&amp;= \frac{0.78}{0.2} \\
-&amp;= 3.9 \\ \\
-&amp;\text{In code would look like:} \\ \\
-&amp;x_n= \left(\left(\bar{x} * sum\left(v\right)\right) - sum\left(x*v\right)\right)/0.2
-\end{align*}
-$$</p>
+Para cada variable calcular el coeficiente de variación. Interpretar y comparar los resultados obtenidos.</li>
+</ol>
 
 </div>
 </div>
@@ -15182,107 +15013,16 @@ $$</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Appling the formula</span>
-<span class="n">l_p</span> <span class="o">=</span> <span class="mi">1</span><span class="o">-</span><span class="nb">sum</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="c1"># Last percentile value</span>
-<span class="n">x_n</span> <span class="o">=</span> <span class="p">((</span><span class="n">mean</span><span class="o">*</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="o">+</span><span class="n">l_p</span><span class="p">))</span> <span class="o">-</span> <span class="nb">sum</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">v</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="n">l_p</span><span class="p">)</span>
-<span class="nb">round</span><span class="p">(</span><span class="n">x_n</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-</pre></div>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">110</span><span class="o">/</span><span class="n">n</span>
+<span class="n">s_x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="mi">3156</span> <span class="o">-</span> <span class="n">n</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">60</span><span class="o">/</span><span class="n">n</span>
+<span class="n">s_y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="mi">1138</span> <span class="o">-</span> <span class="n">n</span><span class="o">*</span><span class="p">(</span><span class="n">y</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
 
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>3.9</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>7.Un grupo de 200 estudiantes, cuya estatura promedio es de $160.96$ centímetros, se divide en dos grupos, uno con una estatura promedio de $163.4$ centímetros y otro, con una de $157.3$ centímetros. ¿Cuántos estudiantes tiene cada grupo?</p>
-<p>Tenemos: $\\$
-$\bar{x} = 160.96 \\ \bar{x}_1 = 163.4 \\ \bar{x}_2 = 157.3 \\ n = 200 \\ n_1 = x \\ n_2 = y \\$
-Desarrollamos: $\\$
-$$
-\begin{align*}
-\text{Sabemos que:} \\
-&amp;\bar{x}_1*n_1 + \bar{x}_2*n_2 =  \sum_{i=1}^n x_i\\
-\text{Así que calculamos: } \sum_{i=1}^n x_i \\
-&amp;\sum_{i=1}^n x_i = \bar{x} * n \\
-&amp;= 160.96 * 200 \\
-&amp;= 32192 \\
-\text{Por lo tanto, tenemos: } \\
-&amp;\bar{x}_1*n_1 + \bar{x}_2*n_2 = 32192 \hspace{2cm} \text{(1)}\\
-\text{Y también: } \\
-&amp;n_1 + n_2 = n \\
-&amp;n_1 + n_2 = 200 \hspace{2cm} \text{(2)}\\
-&amp;n_2 = 200 - n_1 \hspace{2cm} \text{(3)} \\
-\text{Reemplazamos para calcular } n_1 \text{:} \\
-&amp;\bar{x}_1n_1 + \bar{x}_2*\left(200 - n_1\right) = 32192 \hspace{0.5cm} \text{[ Reemplazamos en la ecuación (1) con la ecuación (3) ]} \\
-&amp;\bar{x}_1n_1 + 200\bar{x}_2 - \bar{x}_2n_1 = 32192 \hspace{0.5cm} \text{[ Distibumos ]} \\
-&amp;\bar{x}_1n_1 - \bar{x}_2n_1 = 32192 - 200\bar{x}_2 \hspace{0.5cm} \text{[ Pasamos } 200\bar{x}_2 \text{ al otro lado ]} \\
-&amp;163.4n_1 - 157.3n_1 = 32192 - (200 * 157.3) \hspace{0.5cm} \text{[ Reemplazamos ]} \\
-&amp;6.1n_1 = 32192 - 31460 \\
-&amp;6.1n_1 = 732 \\
-&amp;n_1 = \frac{732}{6.1} \\
-&amp;n= 120 \\
-\text{Ahora calculamos } n_2 \text{:} \\
-&amp;n_2 = 200 - n_1 \hspace{0.5cm} \text{[ Tomamos la ecuación (3) ]} \\
-&amp;n_2= 200 - 120 \hspace{0.5cm} \text{[ Reemplazamos } n_1 \text{ ]} \\
-&amp;n_2= 80 \\
-\end{align*}
-$$</p>
-<p>De modo que el primer grupo tiene 120 estudiantes y el segundo, 80.</p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># In code</span>
-<span class="n">mean</span> <span class="o">=</span> <span class="mf">160.96</span>
-<span class="n">mean_1</span> <span class="o">=</span> <span class="mf">163.4</span>
-<span class="n">mean_2</span> <span class="o">=</span> <span class="mf">157.3</span>
-<span class="n">n</span> <span class="o">=</span> <span class="mi">200</span>
-<span class="n">items_sum</span> <span class="o">=</span> <span class="n">mean</span> <span class="o">*</span> <span class="n">n</span>
-<span class="c1"># Calculate n_1 with linear algebra formula using the ecuations (1) and (2)</span>
-<span class="n">matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> 
-				<span class="p">[</span><span class="n">mean_1</span><span class="p">,</span> <span class="n">mean_2</span><span class="p">]])</span>
-<span class="n">n_1</span><span class="p">,</span> <span class="n">n_2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">matrix</span><span class="p">,</span> <span class="p">[</span><span class="n">n</span><span class="p">,</span> <span class="n">items_sum</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">n_1</span><span class="p">)</span><span class="si">}</span><span class="s1"> items in the first group&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">n_2</span><span class="p">)</span><span class="si">}</span><span class="s1"> items in the second group&#39;</span><span class="p">)</span>
+<span class="n">cv_1</span> <span class="o">=</span> <span class="n">s_x</span><span class="o">/</span><span class="n">x</span>
+<span class="n">cv_2</span> <span class="o">=</span> <span class="n">s_y</span><span class="o">/</span><span class="n">y</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;CV:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">cv_1</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s1">% </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">cv_2</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s1">%&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15304,8 +15044,8 @@ $$</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>120 items in the first group
-80 items in the second group
+<pre>CV:
+133.68% 154.96%
 </pre>
 </div>
 </div>
@@ -15321,8 +15061,21 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>8.A continuación se presentan los salarios mensuales en miles de pesos, pagados por una empresa del Estado a su personal. En la empresa se presenta un conflicto laboral. El gerente propone un aumento del $2\%$ para cada uno de los empleados, mientras que la junta directiva propone un aumento neto de 10 mil pesos mensuales.</p>
-<p>Con base en el promedio, ¿qué es más ventajoso para el Estado y qué para cada grupo de empleados?</p>
+<p>Ambos son altamente heterogeneos, sin embargo Y lo es mucho más</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ol>
+<li>En cierta región la distribución de predios por extensión tiene una media de 35.4 hectáreas y una desviación típica de 19.33 hectáreas, mientras que la distribución por canon de arrendamiento tiene una media de $245,750$ y una desviación de $7,470$. ¿Cual de las dos distribuciones tiene mayor variabilidad? ¿Por qué?</li>
+</ol>
 
 </div>
 </div>
@@ -15335,20 +15088,22 @@ $$</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Salarios de los empleados</span>
-<span class="n">yj</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">300</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="mi">700</span><span class="p">])</span>
-<span class="c1"># Empleados</span>
-<span class="n">nj</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">13</span><span class="p">])</span>
-<span class="c1"># Numero total de empleados</span>
-<span class="n">n</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">nj</span><span class="p">)</span>
-<span class="c1"># Promedio</span>
-<span class="n">mean</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">nj</span><span class="o">*</span><span class="n">yj</span><span class="p">)</span><span class="o">/</span><span class="n">n</span>
-<span class="c1"># Aumentar 2%</span>
-<span class="n">op1</span> <span class="o">=</span> <span class="n">mean</span><span class="o">*</span><span class="mf">1.02</span>
-<span class="c1"># Aumentar 10 mil pesos</span>
-<span class="n">op2</span> <span class="o">=</span> <span class="n">mean</span><span class="o">+</span><span class="mi">10</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Op1: </span><span class="si">{</span><span class="n">op1</span><span class="si">}</span><span class="s1"> mil pesos</span><span class="se">\n</span><span class="s1">Op2: </span><span class="si">{</span><span class="n">op2</span><span class="si">}</span><span class="s1"> mil pesos&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">RTA:</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c1">#Predios</span>
+<span class="n">m_1</span> <span class="o">=</span> <span class="mf">35.4</span>
+<span class="n">s_1</span> <span class="o">=</span> <span class="mf">19.33</span>
+<span class="c1">#Arrendamiento</span>
+<span class="n">m_2</span> <span class="o">=</span> <span class="mi">245750</span>
+<span class="n">s_2</span> <span class="o">=</span> <span class="mi">7470</span>
+<span class="c1"># Coeficientes</span>
+<span class="n">cv_1</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">s_1</span><span class="o">/</span><span class="n">m_1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">cv_2</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">s_2</span><span class="o">/</span><span class="n">m_2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;CV Predios:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">cv_1</span><span class="o">*</span><span class="mi">100</span><span class="si">}</span><span class="s1">%&#39;</span><span class="p">)</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;CV Arrendamiento:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">cv_2</span><span class="o">*</span><span class="mi">100</span><span class="si">}</span><span class="s1">%&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15370,8 +15125,10 @@ $$</p>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Op1: 526.32 mil pesos
-Op2: 526.0 mil pesos
+<pre>CV Predios:
+54.6%
+CV Arrendamiento:
+3.0%
 </pre>
 </div>
 </div>
@@ -15387,42 +15144,11 @@ Op2: 526.0 mil pesos
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Por lo tanto al empleado le sale más comveniente un aumento del $2\%$ pues ganarían $\$526.320$ en promedio. Mientras que con la opción 2 ganarían $\$526.000$ lo cual le conviene más al estado.</p>
-<p>9.Muestre que si $k_1$ y $k_2$ son constantes, entonces $M(k_1+k_2x)=k_1+k_2M(x)$. $\\$</p>
-<p>Demostración\\: $\\$
-$$
-\begin{align*}
-&amp;M(k_1+k_2x) \\
-&amp;M(k_1+k_2x) = \frac{1}{n} \sum_{i=1}^n k_1 + k_2x_i \hspace{0.5cm} \text{[Por definición de promedio]}\\
-&amp;= \frac{1}{n} \left(\sum_{i=1}^n k_1 + \sum_{i=1}^n k_2x_i\right) \hspace{0.5cm} \text{[Distribuimos de la sumatoria]}\\
-&amp;= \frac{1}{n} \left(k_1\sum_{i=1}^n + k_2\sum_{i=1}^n x_i \hspace{0.5cm}\right) \text{[Sacamos las constantes de las sumatorias]}\\
-&amp;= \frac{1}{n} \left(k_1*n + k_2\sum_{i=1}^n x_i\right) \hspace{0.5cm} \text{[Resolvemos la primera sumatoria (Sumatoria de 1 a n de 1 es n)]}\\
-&amp;= k_1 + k_2\frac{1}{n}\sum_{i=1}^n x_i \hspace{0.5cm} \text{[Distribuimos 1/n (en el primer sumando se cancela la n)]}\\
-&amp;= k_1 + k_2\bar{x} \hspace{0.5cm} \text{[Reemplazamos }\frac{1}{n}\sum_{i=1}^n x_i = \bar{x}\text{]}\\
-&amp;M(k_1+k_2x) = k_1 + k_2M(x) \hspace{0.5cm} \text{[Reemplazamos }\bar{x} = M(x)\text{]}\\
-\end{align*}
-$$</p>
-<p>10.Considere un conjunto de datos particionados en $m$ grupos con tamaños $n_1,\dots,n_m$ y medias $\bar{x}_1,\dots,\bar{x}_m$, tales que $n_1=\dots=n_m=c$. Muestre que si $n=c\cdot m$, entonces la media de todo el conjunto de datos $\bar{x}$ coincide con la media de las medias de los grupos $\bar{\bar{x}}$.</p>
+<p>De esta forma podemos ver que la distribución por predios tiene mayor variabilidad, pues calculando el coeficiente de variabilidad la cual es comparable, pues es adimensional, no da una gran diferencia respecto a la distribución por canon de arrendamiento.</p>
 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Pendiente</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div>
 </body>
 
